@@ -1,3 +1,12 @@
+<p align="center"><img src="docs/assets/banner.svg" alt="Career Copilot Agent" width="100%"></p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.x-3776AB?logo=python&logoColor=white" alt="Python 3">
+  <img src="https://img.shields.io/badge/tests-pytest-0A9EDC?logo=pytest&logoColor=white" alt="Tests: pytest">
+  <img src="https://img.shields.io/badge/license-MIT-22c55e" alt="MIT License">
+  <img src="https://img.shields.io/badge/human--in--the--loop-yes-fbbf24" alt="Human in the loop">
+</p>
+
 # Career Copilot Agent
 
 A human-in-the-loop pipeline for an early-career job search: it scores job listings,
@@ -17,6 +26,16 @@ version: synthetic sample data only, no personal records, no credentials.
 | `content.py` | Draft -> fact-check gate (each claim needs a primary source or two independent domains) -> caption + slide outline. Also checks connection-note length. |
 | `slides.py` | Renders 1080x1350 PNG slides and a multi-page PDF carousel with Pillow. |
 | `scheduler.py` | Builds a payload for a third-party scheduler you already use; refuses to send unless the draft is approved. Computes the 24h/72h metric check-ins. |
+
+## Demo
+
+<p align="center"><img src="docs/assets/demo.svg" alt="Demo: shortlist run, then the generated carousel slides" width="100%"></p>
+
+The animation loops through a real `shortlist` run on `data/sample_jobs.json`, then the slides the `post` command renders.
+
+## Workflow
+
+<p align="center"><img src="docs/assets/workflow.svg" alt="Workflow of the jobs, content and networking pipelines" width="100%"></p>
 
 ## Architecture
 
@@ -46,6 +65,22 @@ flowchart LR
     Q --> R[(networking-log.csv)]
   end
 ```
+
+## Screenshots
+
+All images are generated from real CLI output on the synthetic sample data (`python docs/make_assets.py`).
+
+**Shortlist output**
+
+<img src="docs/assets/shortlist-terminal.svg" alt="Terminal output of the shortlist command" width="100%">
+
+**Rendered carousel (`output/post/slide-*.png`)**
+
+<img src="docs/assets/carousel-grid.svg" alt="Grid of the five generated carousel slides" width="100%">
+
+**Job tracker CSV**
+
+<img src="docs/assets/tracker-preview.svg" alt="Preview of output/job-tracker.csv" width="100%">
 
 ## Setup
 
