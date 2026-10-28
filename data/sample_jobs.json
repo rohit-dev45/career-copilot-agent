@@ -1,0 +1,10 @@
+[
+  {"company": "Example Corp", "title": "Junior .NET Developer", "location": "Remote (India)", "url": "https://example.com/jobs/1",
+   "requirements": ["C#", ".NET", "ASP.NET Core", "SQL", "Git"], "min_years": 0, "is_live": true},
+  {"company": "Acme Analytics", "title": "Software Engineer I", "location": "Hybrid", "url": "https://example.com/jobs/2",
+   "requirements": ["C#", ".NET", "Azure", "SQL"], "min_years": 1},
+  {"company": "Sample Labs", "title": "AI Developer Trainee", "location": "Remote", "url": "https://example.com/jobs/3",
+   "requirements": ["Python", "LLM APIs", "Git"], "min_years": 0},
+  {"company": "Demo Systems", "title": "Senior Backend Engineer", "location": "Onsite", "url": "https://example.com/jobs/4",
+   "requirements": ["Java", "Kubernetes", "Kafka"], "min_years": 6}
+]
