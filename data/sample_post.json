@@ -1,0 +1,14 @@
+{
+  "hook": "Give your AI agent its own identity",
+  "claims": [
+    {"text": "Service identities let automation run without a person's credentials.",
+     "sources": [{"title": "Primary docs (example)", "url": "https://docs.example.com/service-identity", "published": "2026-01-01"}]},
+    {"text": "Short-lived tokens limit damage if one leaks.",
+     "sources": [{"title": "Blog A", "url": "https://a.example.org/tokens", "published": "2026-01-02"},
+                 {"title": "Blog B", "url": "https://b.example.net/tokens", "published": "2026-01-03"}]}
+  ],
+  "takeaways": ["Scope each agent's permissions.", "Rotate keys and keep them in a vault.", "Keep a human approval step."],
+  "question": "Would you give an agent its own identity?",
+  "hashtags": ["AgenticAI", "DotNet", "Security"],
+  "footer": "career-copilot-agent sample"
+}
